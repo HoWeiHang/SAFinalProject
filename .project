@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>practice</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.wst.jsdt.core.javascriptValidator</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.wst.common.project.facet.core.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.wst.validation.validationbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>
+		<nature>org.eclipse.wst.common.modulecore.ModuleCoreNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
+		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/webapp/css/EL_navbar.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/EL_navbar.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/Firstpage.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/Firstpage.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/Footer.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/Footer.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/IndexView_main_content.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/IndexView_main_content.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/Manager_main_content.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/Manager_main_content.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/Normal_navbar.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/Normal_navbar.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/SC_navbar.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/SC_navbar.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/SS_navbar.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/SS_navbar.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/Test_main_content.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/Test_main_content.css</location>
+		</link>
+		<link>
+			<name>src/main/webapp/css/about_and_download_content.css</name>
+			<type>1</type>
+			<location>C:/Users/user/Desktop/SA project/SA_project最終回合/SA_project/css/about_and_download_content.css</location>
+		</link>
+	</linkedResources>
+</projectDescription>
