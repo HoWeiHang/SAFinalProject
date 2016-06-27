@@ -1,0 +1,133 @@
+html,body {
+	height: 100%;
+	margin: 0px;
+	overflow: auto; min-width:1519px; width:100%;
+}
+
+footer {
+	padding-top:12px;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display:block;     
+    background: #C0C0C0;
+    margin-bottom:0px; 
+    
+}
+
+.footer_left{
+	position: absolute;
+	width: 33%;
+	height:80%; 
+	/*border: 1px solid #000000;*/
+}
+.footer_left_left{
+	position: absolute;
+	width: 80%;
+	height:80%;
+}
+.footer_left_right{
+	position: absolute;
+	left:80%;
+	width: 20%;
+	height:80%;
+}
+
+.footer_mid{
+    position: absolute;
+	left: 33%;
+	width: 15%;
+	height:80%; 
+	/*border: 1px solid #6666FF;*/
+}
+.footer_mid_left{
+	position: absolute;
+	width: 50%;
+	height:80%;
+}
+.footer_mid_right{
+	position: absolute;
+	left:50%;
+	width: 50%;
+	height:80%;
+}
+.footer_right{
+	position: absolute;
+	width: 52%;
+	height:80%; 
+	left:48%;
+	/*border: 1px solid #FF0000;*/
+}
+.footer_right_top{
+	position: absolute;
+	height:40%;
+	width:100%;
+}
+.footer_right_top_left_one{
+	position: absolute;
+	height:50%;
+	width:15%;
+}
+.footer_right_top_left_two{
+	position: absolute;
+	height:50%;
+	width:15%;
+	left:15%;
+}
+.footer_right_top_left_three{
+	position: absolute;
+	height:50%;
+	width:15%;
+	left:30%;
+}
+.footer_right_top_left_four{
+	position: absolute;
+	height:50%;
+	width:15%;
+	left: 45%;
+}
+.footer_right_top_left_five{
+	position: absolute;
+	height:50%;
+	width:40%;
+	left: 60%;
+}
+.footer_right_down{
+	position: absolute;
+	height:60%;
+	width:100%;
+	top:50%;
+}
+
+
+/*setting*/
+.footer_text_setting{
+	font-size:13px;
+	color:#696969;
+	font-family: Microsoft JhengHei;	
+}
+
+.footer_left_link_setting{
+	font-size:13px;
+	color:#696969;
+	font-family: Microsoft JhengHei;
+	text-decoration:none;
+}
+.footer_left_link_setting:hover{
+	font-size:13px;
+	color:#FFF;
+	font-family: Microsoft JhengHei;
+	text-decoration:none;
+} 
+.footer_right_link_setting{
+	color:#000;
+	text-decoration:none;
+}
+.footer_right_link_setting:hover{
+	color:#FFF;
+	text-decoration:none;
+}
+
+

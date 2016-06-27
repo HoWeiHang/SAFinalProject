@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<div class="container_top">
+		<div class="container_top_mid">
+			<div class="container_top_mid_block">
+				<div class="container_top_mid_block_left">
+					<p style="font-family: Microsoft JhengHei; padding-left:50px; margin-top:15px; font-size:23px; color:#9F5000 ">
+						大學入學考試中心
+					</p>	
+				</div>	
+
+				<div class="container_top_mid_block_right">
+					<p style="padding-left:30%;">
+						<a class="container_top_mid_block_right_link_setting" href="IndexView">
+                            首頁
+                        </a>
+                            &nbsp;|&nbsp;
+                        <a class="container_top_mid_block_right_link_setting" href="http://www.ceec.edu.tw/CeecMag/paper.html">
+                            訂閱選才電子報
+                        </a>
+                            &nbsp;|&nbsp;
+                        <a class="container_top_mid_block_right_link_setting" href="#" data-toggle="modal" data-target="#checkout">
+							管理者登出
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="modal fade bs-example-modal-sm" id="checkout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">登出確認</h4>
+                </div>
+                <div class="modal-body">
+                    <p>您確定要登出嗎?再想一下吧!!!</p>
+                </div>
+                <div class="modal-footer">
+	                <form id="checkoutForm" action="Manager_Login" method="get">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	                    <button type="submit" class="btn btn-danger">登出</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+			
+			<!--top orange line-->
+			<div class="container_top_mid_line">
+			</div>
+		</div>
+	</div>

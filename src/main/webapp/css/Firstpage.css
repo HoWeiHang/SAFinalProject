@@ -1,0 +1,88 @@
+html,body {
+	height: 100%;
+	margin: 0px;
+}
+/*各測驗項目大框架*/
+.big_test_container{
+    top:250px;
+	width: 1500px;
+	height: 300px;
+	position: relative;
+	/*border: 4px solid #000000;*/
+}
+/*各測驗項目小框架*/
+.small_test_container{
+    width: 75%;
+    height: 100%;
+    position: relative;
+    /*border: 2px solid #2CB4D2;*/
+    margin: 0 auto;
+}
+/*各測驗項目框架*/
+.test_container{
+	width:  25%;
+	height: 100%;
+	/*border: 2px solid #5BCE30;*/
+	position: absolute;
+}
+/*各測驗項目*/
+.every_test_blue{
+	width: 90%;
+	height: 95%;
+    background: rgb(208,228,247); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(208,228,247,1) 0%, rgba(115,177,231,1) 65%, rgba(83,159,225,1) 79%, rgba(10,119,213,1) 95%, rgba(10,119,213,1) 99%, rgba(10,119,213,1) 99%, rgba(135,188,234,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 65%,rgba(83,159,225,1) 79%,rgba(10,119,213,1) 95%,rgba(10,119,213,1) 99%,rgba(10,119,213,1) 99%,rgba(135,188,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 65%,rgba(83,159,225,1) 79%,rgba(10,119,213,1) 95%,rgba(10,119,213,1) 99%,rgba(10,119,213,1) 99%,rgba(135,188,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 50%;
+	position: absolute;
+	margin: 2.5% 5%;
+	box-shadow: 2px 2px 20px 2px rgba(0,0,0,0.25) ;
+}
+.every_test_blue:hover{
+	display: block;
+	width: 90%;
+	height: 95%;
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(32,124,202,1) 0%, rgba(41,137,216,1) 50%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 50%;
+	position: absolute;
+	margin: 2.5% 5%;
+}
+.every_test_green{
+	width: 90%;
+	height: 95%;
+    background: rgb(180,227,145); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(180,227,145,1) 65%, rgba(97,196,25,1) 97%, rgba(97,196,25,1) 97%, rgba(97,196,25,1) 98%, rgba(97,196,25,1) 98%, rgba(97,196,25,1) 98%, rgba(97,196,25,1) 99%, rgba(97,196,25,1) 99%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(180,227,145,1) 65%,rgba(97,196,25,1) 97%,rgba(97,196,25,1) 97%,rgba(97,196,25,1) 98%,rgba(97,196,25,1) 98%,rgba(97,196,25,1) 98%,rgba(97,196,25,1) 99%,rgba(97,196,25,1) 99%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(180,227,145,1) 65%,rgba(97,196,25,1) 97%,rgba(97,196,25,1) 97%,rgba(97,196,25,1) 98%,rgba(97,196,25,1) 98%,rgba(97,196,25,1) 98%,rgba(97,196,25,1) 99%,rgba(97,196,25,1) 99%,rgba(180,227,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 50%;
+	position: absolute;
+	margin: 2.5% 5%;
+	box-shadow: 2px 2px 20px 2px rgba(0,0,0,0.25) ;
+}
+.every_test_green:hover{
+	display: block;
+	width: 90%;
+	height: 95%;
+    background: rgb(180,227,145); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(180,227,145,1) 0%, rgba(97,196,25,1) 16%, rgba(97,196,25,1) 16%, rgba(97,196,25,1) 28%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 16%,rgba(97,196,25,1) 16%,rgba(97,196,25,1) 28%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 16%,rgba(97,196,25,1) 16%,rgba(97,196,25,1) 28%,rgba(180,227,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 50%;
+	position: absolute;
+	margin: 2.5% 5%;
+}
+.word{
+    font-size: 350%; 
+	width: 80%;
+	height: 35%;
+	left:18%;
+	top:25%;
+	position: absolute;
+	color: white;
+	font-position: absolute;
+	font-family: Microsoft JhengHei;
+	text-decoration:none; 
+}

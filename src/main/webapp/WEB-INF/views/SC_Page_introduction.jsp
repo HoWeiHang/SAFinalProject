@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,95 +16,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="css/Test_main_content.css">
-	<link rel="stylesheet" href="css/SC_navbar.css">
 	<link rel="stylesheet" href="css/Footer.css">
-	
+	<link rel="stylesheet" href="css/SC_navbar.css">
 </head>
 <body>
-
-
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container_top">
-		<div class="container_top_text">
-			<div class="container_top_topic">
-			�Ǭ��O����
-			</div>
-			<div class="container_top_topic2">
-					<a class="a_text_white" style="font-size:14px;" href="../../IndexView/IndexView.html">���� </a>
-					<font>&nbsp;|&nbsp;</font>
-					<a class="a_text_white" style="font-size:14px;" href="http://www.ceec.edu.tw/CeecMag/paper.html">�q�\��~�q�l��</a>
-					<font>&nbsp;|&nbsp;</font>
-					<a class="a_text_white" style="font-size:14px;" href="">�޲z�̵n�J</a>
-					<br>
-					<br>
-					<a class="a_text_white" style="font-size:20px;" href="../../SS_Page/SSIndexView.html">���w��ئҸ�</a>
-					<font>&nbsp;|&nbsp;</font>
-					<a class="a_text_white" style="font-size:20px;" href="../../EL_Page/ELIndexView.html">�^�yť�O����</a>
-			</div>
-		</div>
-	</div>
-</nav>
-<nav class="navbar">
-<div class="main_content_topbar">
-		
-      		<div style="font-family: Microsoft JhengHei;font-size:20px;">
-      			<ul class="navigation">
-      			
-            <li style="padding-left: 23.5%;">
-                <a class="main_content_link_setting" href="../01-introduction/SC_Page_introduction.html">²��</a>
-            </li>
-             <li>
-                <a class="main_content_link_setting" href="SC_Page_news">�̷s����</a>
-            </li>
-             <li>
-                <a class="main_content_link_setting" href="../03-schedule/SC_Page_schedule.html">�Ҹդ�{</a>
-            </li>
-            <li>
-                <a href="#">�ѦҨΧ@</a>
-                <ul>
-                    <li><a href="../04-masterpiece/SC_Page_masterpiece_Chinese.html">���Ҭ�</a></li>
-                    <li>
-                        <a href="../04-masterpiece/SC_Page_masterpiece_English.html">�^��Ҭ�</a>
-                        
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">�������D</a>
-                <ul>
-                    <li><a href="#">�̦U�Ҭ����<span class="arrow-right"></span></a>
-						<ul>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">���</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">�^��</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">�ƾ�</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">���|</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">�۵M</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">�̾Ǧ~�פ���<span class="arrow-right"></span></a>
-                        <ul>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">104</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">103</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">102</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">101</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">100</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">99</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-             <li>
-                <a class="main_content_link_setting" href="../06-statistic/SC_Page_statistic.html">�έp���</a>
-            </li>
-             <li >
-                <a class="main_content_link_setting" href="../07-form/SC_Page_form.html" style="border-right: 1px solid #fff;">��������</a>
-            </li>
-
-    </ul>
-    </div>
-    </div>
-</nav>
+<%@include  file="SCNavbar.jspf" %>
 <div class="wrap"> 
     <div class="main_content">
       	
@@ -112,162 +29,105 @@
       		<div class="main_content_down_block">
       			<div class="main_content_down_block_title">
       				<p style="color:#0062FF; font-size:24px; font-family: Microsoft JhengHei;">
-      					²��
+      					簡介
 						<!--arrow-->
 						<font color="#00AAFFFF"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </font>
       				</p>
+      				<div class="alert alert-info" role="alert" style="width:15%; margin-left:-18px;">
+      				<p>．<a href="http://www.ceec.edu.tw/105SAT/105Sat%E7%B0%A1%E7%AB%A0/105Sat%E7%B0%A1%E7%AB%A0.pdf">簡章</a></p>
+      				<p>．<a href="https://ap.ceec.edu.tw/examinfo/SysOpen.aspx?examid=105SAT">試務專區</a></p>
+      				</div>
       			</div>
 
       			<div class="main_content_down_block_right">
       				<div class="main_content_down_block_top">
       					<p>
-      							����ƶȨ�U�ҥ��A�ѡu�Ǭ��O����v�A��ڱ��p���H���~��²���θ��D�ҦC�W�w����
+      							本資料僅協助考生瞭解「學科能力測驗」，實際情況應以當年度簡章及試題所列規定為準
       					</p>
       				</div>
 
       				<div class="main_content_down_block_down" style="font-family: Microsoft JhengHei;">
-      					<!--introduction-->	
-�Ǭ��O����]²�١u�Ǵ��v�^�]�A���B�^��B�ƾǡB���|�B�۵M���Ҭ�A���b����ҥͬO�_�㦳�����j�ǱШ|���򥻾Ǭ��O�A�O�j�Ǯըt��B�z��ǥͪ����e�C�ۥ���83�~�}��H�ӡA����示�e�H�۰����ҵ{���ܤƭ����վ�C����104�~�}�l�A�]��101�Ǧ~�׹�I���u���q���Ť��ǽҵ{���n�v���ҵ{���n�P���v�ҵ{���n�]²�١u101�Һ��v�^�A �Ǵ����Ҭ�B���|�Ҭ���v���������示�e�H���վ�F�^��B�ƾǡB�۵M�T�Ҭ�P���|�Ҭ�a�z�B�����P���|�����A���N�u��99�Һ��R�D�C
+      					<!--introduction資料庫輸入-->	
+      					<p>
+學科能力測驗（簡稱「學測」）包括國文、英文、數學、社會、自然五考科，旨在測驗考生是否具有接受大學教育的基本學科能力，是大學校系初步篩選學生的門檻。自民國83年開辦以來，其測驗內容隨著高中課程的變化迭有調整。民國104年開始，因應101學年度實施之「普通高級中學課程綱要」國文課程綱要與歷史課程綱要（簡稱「101課綱」）， 學測國文考科、社會考科歷史部分的測驗內容隨之調整；英文、數學、自然三考科與社會考科地理、公民與社會部分，仍將沿用99課綱命題。</p>
 
-�Ǵ��U�����d��H���@�ΰ��G�����׽ҵ{���n���ǡA�ҥͤ��쳣�������ҡA���Z���įŤ���A�i�Ω�j���c�P���ˤJ�ǡB�j�ǭӤH�ӽФJ�ǡB�j�ǦҸդJ�ǡA�ά�ޮհ|�ӽФJ�ǵ��ۥͺ޹D�C
+<p>學測各科測驗範圍以高一及高二之必修課程綱要為準，考生五科都必須應考，成績均採級分制，可用於大學繁星推薦入學、大學個人申請入學、大學考試入學，及科技校院申請入學等招生管道。</p>
 
-���ϦU�j�Ǯըt�B�����Юv�B�ҥͤΦU�ɤF�ѾǴ��]��101�Һ��ҧ@���վ�A�H�U�����Ǵ�������ؼСB����ɶ��B����d��B�D���H�Ρu�@���h���v���R�D�覡�C
+<p>為使各大學校系、高中教師、考生及各界了解學測因應101課綱所作的調整，以下說明學測之測驗目標、測驗時間、測驗範圍、題型以及「一綱多本」的命題方式。</p>
+<br>
+<p><b>壹、測驗目標</b></p>
+<p>
+學測的測驗目標分為四方面： <br>
+一、測驗考生是否具備高中生應有的基本學科知能<br>
+二、測驗考生是否具備接受大學教育應有的學科知能<br>
+三、測驗考生能否結合生活知能及整合不同領域的學科知識<br>
+四、測驗考生是否具備理解及應用學科知識的能力<br>
+</p>
+<br>
+<p><b>貳、測驗時間</b></p>
 
-���B����ؼ�
+<p>測驗時間除國文考科為120分鐘外，其餘各考科均為100分鐘。未來配合實際需要，可作適度調整。
+</p>
+<br>
+<p><b>參、測驗範圍</b></p>
 
-�Ǵ�������ؼФ����|�譱�G 
-�@�B����ҥͬO�_��ư������������򥻾Ǭ쪾��
-�G�B����ҥͬO�_��Ʊ����j�ǱШ|�������Ǭ쪾��
-�T�B����ҥͯ�_���X�ͬ�����ξ�X���P��쪺�Ǭ쪾��
-�|�B����ҥͬO�_��Ʋz�Ѥ����ξǬ쪾�Ѫ���O
+<p>現行學測的考試科目包括：國文、英文、數學、社會、自然五考科，其中社會考科的內容包含歷史、地理、公民與社會；自然考科的內容包含物理、化學、生物、地球科學。社會、自然考科結合不同學科的設計，旨在考察考生綜合運用這些學科內容的能力。<br><br>
 
-�L�B����ɶ�
+國文考科與社會考科歷史部分測驗範圍以101課綱為依據，其餘各考科測驗範圍以99課綱為依據，包括高一、高二必修課程。自民國104年開始施測的學測各考科測驗範圍如表一（詳見101課綱學測國文考科、社會考科歷史部分考試說明，以及99課綱各考科考試說明）。<br>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Microsoft JhengHei, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Microsoft JhengHei, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-okqd{font-weight:bold;font-size:14px;background-color:#efefef;color:#000000;text-align:center}
+.tg .tg-huh2{font-size:14px;text-align:center}
+.tg .tg-6nwz{font-size:14px;text-align:center;vertical-align:top}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 468px">
+<colgroup>
+<col style="width: 91px">
+<col style="width: 500px">
+</colgroup>
+  <tr>
+    <th class="tg-okqd">考試科目</th>
+    <th class="tg-okqd">測驗範圍</th>
+  </tr>
+  <tr>
+    <td class="tg-huh2">國文*</td>
+    <td class="tg-huh2">高一必修科目國文、高二必修科目國文</td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">英文</td>
+    <td class="tg-6nwz">高一必修科目英文、高二必修科目英文</td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">數學</td>
+    <td class="tg-6nwz">高一必修科目數學、高二必修科目數學A版</td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">社會*</td>
+    <td class="tg-6nwz">高一必修科目歷史、必修科目地理、必修科目公民與社會<br>高二必修科目歷史、必修科目地理、必修科目公民與社會</td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">自然*</td>
+    <td class="tg-6nwz">修科目基礎物理一、必修科目基礎化學（一）、<br>必修科目基礎生物(1)、必修科目基礎地球科學<br>必修科目基礎物理二A、必修科目基礎化學（二）</td>
+  </tr>
+</table>
+註: * 國文考科和社會考科歷史部分依101課綱命題，其餘各科依據99課綱命題。<br>
+      * 自然考科之測驗範圍皆屬於高一、高二必修課程。</p>
+<br>      
+<p><b>肆、題型</b></p>
 
-����ɶ������Ҭ쬰120�����~�A��l�U�Ҭ짡��100�����C���Ӱt�X��ڻݭn�A�i�@�A�׽վ�C
+<p>學測以電腦可讀的題型為主，例如：選擇題（單選題、多選題）、選填題；國文、英文考科另有非選擇題。</p>
 
-�ѡB����d��
+<p>各考科試題之詳細計分方式請見該科試題本的作答說明。社會考科中的歷史、地理、公民與社會三科試題所占比例相當。自然考科的試題分為兩部分，第壹部分全部計分；第貳部分則是答對一定比例即得滿分。至於國文考科與社會考科之試卷架構與題型配置示例，請參見於民國103年9月30日公布的參考試卷。其餘各考科則請參閱已於民國101年9月28日公布的99課綱各考科參考試卷。</p>
 
-�{��Ǵ����Ҹլ�إ]�A�G���B�^��B�ƾǡB���|�B�۵M���Ҭ�A�䤤���|�Ҭ쪺���e�]�t���v�B�a�z�B�����P���|�F�۵M�Ҭ쪺���e�]�t���z�B�ƾǡB�ͪ��B�a�y��ǡC���|�B�۵M�Ҭ쵲�X���P�Ǭ쪺�]�p�A���b�ҹ�ҥͺ�X�B�γo�ǾǬ줺�e����O�C
-
-���Ҭ�P���|�Ҭ���v��������d��H101�Һ����̾ڡA��l�U�Ҭ����d��H99�Һ����̾ڡA�]�A���@�B���G���׽ҵ{�C�ۥ���104�~�}�l�I�����Ǵ��U�Ҭ����d��p���@�]�Ԩ�101�Һ��Ǵ����Ҭ�B���|�Ҭ���v�����Ҹջ����A�H��99�Һ��U�Ҭ�Ҹջ����^�C
-
-��: * ���Ҭ�M���|�Ҭ���v������101�Һ��R�D�A��l�U��̾�99�Һ��R�D�C
-      * �۵M�Ҭ줧����d����ݩ󰪤@�B���G���׽ҵ{�C
-�v�B�D��
-
-�Ǵ��H�q���iŪ���D�����D�A�Ҧp�G����D�]����D�B�h���D�^�B����D�F���B�^��Ҭ�t���D����D�C
-
-�U�Ҭ���D���Բӭp���覡�Ш��Ӭ���D�����@�������C���|�Ҭ줤�����v�B�a�z�B�����P���|�T����D�ҥe��Ҭ۷��C�۵M�Ҭ쪺���D�����ⳡ���A�ĳ����������p���F�ĶL�����h�O����@�w��ҧY�o�����C�ܩ���Ҭ�P���|�Ҭ줧�ը��[�c�P�D���t�m�ܨҡA�аѨ������103�~9��30�餽�����ѦҸը��C��l�U�Ҭ�h�аѾ\�w�����101�~9��28�餽����99�Һ��U�Ҭ�ѦҸը��C
-
+      				<!--introduction資料庫輸入-->
       				</div>
       			</div>
       		</div>
       	</div>
     </div>
 </div><!-- wrap -->
-	
-<footer class="footer"><!--����navbar-->
-	
-	<div class="footer_left">
-		<div class="footer_left_left">
-			<p align="right" style="font-family: Microsoft JhengHei;" >�{�Ѥ���</p>
-		</div>
-
-		<div class="footer_left_right">
-			<p style="padding-left:20px;" class="footer_text_setting" >
-				<a class="footer_left_link_setting" href="../../FooterRelativePage/01-aboutcenter/aboutcenter_introduction.html">
-					²��
-				</a>
-			</p>
-			<p style="padding-left:20px;" class="footer_text_setting" >
-				<a class="footer_left_link_setting" href="../../FooterRelativePage/01-aboutcenter/aboutcenter_structure.html">
-					��´�[�c
-				</a>
-			</p>
-			<p style="padding-left:20px;" class="footer_text_setting" >
-				<a class="footer_left_link_setting" href="../../FooterRelativePage/01-aboutcenter/aboutcenter_office.html">
-					�U���¾�x
-				</a>
-			</p>
-		</div>
-	</div>
-	
-	<span class="footer_mid">
-		<span class="footer_mid_left">
-			<p align="center" style="font-family: Microsoft JhengHei;">����Ҹ�</p>
-		</span>
-
-		<span class="footer_mid_right">
-			<p class="footer_text_setting">
-				<a class="footer_left_link_setting" href="../../SC_Page/SCIndexView.html">
-					�Ǭ��O����
-				</a>
-			</p>
-			<p class="footer_text_setting">
-				<a class="footer_left_link_setting" href="../../SS_Page/SSIndexView.html">
-					���w��ئҸ�
-				</a>
-			</p>
-			<p class="footer_text_setting">
-				<a class="footer_left_link_setting" href="../../EL_Page/ELIndexView.html">
-					�^��ť�O����
-				</a>
-			</p>
-		</span>
-	</span>
-	
-	<div class="footer_right">
-		<div class="footer_right_top">
-			<div class="footer_right_top_left_one">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/02-downloadregion/downloadregion_allsoftware.html">
-						�U���M��
-					</a>
-				</p>
-			</div>
-			<span class="footer_right_top_left_two">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/03-syllabuschange/syllabuschange.html">
-						�Һ�����
-					</a>
-				</p>
-			</span>
-			<span class="footer_right_top_left_three">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/04-relativewebsite/Relativewebsite.html">
-						��������
-					</a>
-				</p>
-			</span>
-			<div class="footer_right_top_left_four">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/05-other/other.html">
-						��L��T
-					</a>
-				</p>
-			</div>
-		</div>
-
-		<div class="footer_right_down">
-			<p style="padding-left:20px;margin-top:0px;font-size:11.5px;color:#696969;font-family: Microsoft JhengHei;">
-				&nbsp;&nbsp;�`���G(02)2366-1416�@
-					  �y���d�ߡG(02)2364-3677�@
-					  �ǯu�G(02)2362-0755 
-				<br>
-				&nbsp;&nbsp;�a�}�G10673 �x�_����s��237��
-					  �H�c�G10099 �O�_�l�F71-64��
-			</p>
-			
-		</div>
-	</div>
-</footer>
-
-
-
-
-
-    
-  
-
+<%@include  file="SystemFooter.jspf" %>
 </body>
 </html>

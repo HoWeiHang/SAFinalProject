@@ -6,10 +6,10 @@ public class News{
 	private int id;
 	private String title;
 	private String content;
-	private String issuePerson;
 	private Date createDate;
 	private Test test=new Test();
 	private Schedule schedule=new Schedule();
+	private Manager manager=new Manager();
 	public int getId() {
 		return id;
 	}
@@ -28,12 +28,6 @@ public class News{
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getIssuePerson() {
-		return issuePerson;
-	}
-	public void setIssuePerson(String issuePerson) {
-		this.issuePerson = issuePerson;
-	}
 	public Date getCreateDate() {
 		return createDate;
 	}
@@ -51,6 +45,12 @@ public class News{
 	}
 	public void setSchedule(Schedule schedule) {
 		this.schedule = schedule;
+	}
+	public Manager getManager() {
+		return manager;
+	}
+	public void setManager(Manager manager) {
+		this.manager = manager;
 	}
 	
 }

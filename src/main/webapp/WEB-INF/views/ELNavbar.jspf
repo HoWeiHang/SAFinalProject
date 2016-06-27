@@ -1,0 +1,88 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container_top">
+		<div class="container_top_text">
+			<div class="container_top_topic">
+			英文聽力測驗
+			</div>
+			<div class="container_top_topic2">
+					<a class="a_text_white" style="font-size:14px;" href="IndexView">首頁 </a>
+					<font>&nbsp;|&nbsp;</font>
+					<a class="a_text_white" style="font-size:14px;" href="http://www.ceec.edu.tw/CeecMag/paper.html">訂閱選才電子報</a>
+					<font>&nbsp;|&nbsp;</font>
+					<c:choose> 
+  					<c:when test="${manager.managerAccount == null || manager.managerAccount.equals(checkout)}">
+    				<a class="a_text_white" style="font-size:14px;" href="Manager_Login">管理者登入</a>
+  					</c:when>
+  					<c:otherwise>
+   					<a class="a_text_white" style="font-size:14px;" href="Manager_Index"><b>管理者頁面</b></a>
+    				<a class="a_text_white" style="font-size:14px;" data-toggle="modal" data-target="#checkout"><b>登出</b></a>    				
+  					</c:otherwise>
+					</c:choose>
+					<br>
+					<br>
+					<a class="a_text_white" style="font-size:20px;" href="SCIndexView">學科能力測驗</a>
+					<font>&nbsp;|&nbsp;</font>
+					<a class="a_text_white" style="font-size:20px;" href="SSIndexView">指定科目考試</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="modal fade bs-example-modal-sm" id="checkout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">登出確認</h4>
+                </div>
+                <div class="modal-body">
+                    <p>您確定要登出嗎?再想一下吧!!!</p>
+                </div>
+                <div class="modal-footer">
+	                <form id="checkoutForm" action="Manager_Login" method="get">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	                    <button type="submit" class="btn btn-danger">登出</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+<nav class="navbar">
+    <div class="main_content_topbar">
+    
+          <div style="font-family: Microsoft JhengHei;font-size:20px;">
+            <ul class="navigation">
+            
+            <li style="padding-left: 20%;">
+                <a class="main_content_link_setting" href="EL_Page_introduction" style="border-right: 1px solid #8DD295;">簡介</a>
+            </li>
+             <li>
+                <a class="main_content_link_setting" href="EL_Page_news" style="border-right: 1px solid #8DD295;">最新消息</a>
+            </li>
+             <li>
+                <a class="main_content_link_setting" href="EL_Page_schedule" style="border-right: 1px solid #8DD295;">考試日程</a>
+            </li>
+            <li>
+                <a class="main_content_link_setting" href="EL_Page_referencepaper" style="border-right: 1px solid #8DD295;">參考試卷</a>
+            </li>
+            <li>
+                <a class="main_content_link_setting" href="EL_Page_pastpaper" style="border-right: 1px solid #8DD295;">歷屆試題</a>                
+            </li>
+             <li>
+                <a class="main_content_link_setting" href="EL_Page_statistic" style="border-right: 1px solid #8DD295;">統計資料</a>
+            </li>
+            <li>
+                <a class="main_content_link_setting" href="EL_Page_form" style="border-right: 1px solid #8DD295;">相關表格</a>
+            </li>
+            <li >
+                <a class="main_content_link_setting" href="EL_Page_question" style="border-right: 1px solid #fff;">問題解答</a>               
+            </li>
+    </ul>
+          </div>
+
+        </div>
+</nav>

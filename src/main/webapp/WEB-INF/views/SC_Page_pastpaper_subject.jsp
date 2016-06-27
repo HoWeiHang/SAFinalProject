@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,130 +16,27 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="css/Test_main_content.css">
-	<link rel="stylesheet" href="css/SC_navbar.css">
 	<link rel="stylesheet" href="css/Footer.css">
+	<link rel="stylesheet" href="css/SC_navbar.css">
 </head>
 <body>
-
-
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container_top">
-		<div class="container_top_text">
-			<div class="container_top_topic">
-			¾Ç¬ì¯à¤O´úÅç
-			</div>
-			<div class="container_top_topic2">
-					<a class="a_text_white" style="font-size:14px;" href="../../IndexView/IndexView.html">­º­¶ </a>
-					<font>&nbsp;|&nbsp;</font>
-					<a class="a_text_white" style="font-size:14px;" href="http://www.ceec.edu.tw/CeecMag/paper.html">­q¾\¿ï¤~¹q¤l³ø</a>
-					<font>&nbsp;|&nbsp;</font>
-					<a class="a_text_white" style="font-size:14px;" href="">ºÞ²zªÌµn¤J</a>
-					<br>
-					<br>
-					<a class="a_text_white" style="font-size:20px;" href="../../SS_Page/SSIndexView.html">«ü©w¬ì¥Ø¦Ò¸Õ</a>
-					<font>&nbsp;|&nbsp;</font>
-					<a class="a_text_white" style="font-size:20px;" href="../../EL_Page/ELIndexView.html">­^»yÅ¥¤O´úÅç</a>
-			</div>
-		</div>
-	</div>
-</nav>
-<nav class="navbar">
-      	<div class="main_content_topbar">
-		
-      		<div style="font-family: Microsoft JhengHei;font-size:20px;">
-      			<ul class="navigation">
-      			
-            <li style="padding-left: 23.5%;">
-                <a class="main_content_link_setting" href="../01-introduction/SC_Page_introduction.html">Â²¤¶</a>
-            </li>
-             <li>
-                <a class="main_content_link_setting" href="../02-news/SC_Page_news.html">³Ì·s®ø®§</a>
-            </li>
-             <li>
-                <a class="main_content_link_setting" href="../03-schedule/SC_Page_schedule.html">¦Ò¸Õ¤éµ{</a>
-            </li>
-            <li>
-                <a href="#">°Ñ¦Ò¨Î§@</a>
-                <ul>
-                    <li><a href="../04-masterpiece/SC_Page_masterpiece_Chinese.html">°ê¤å¦Ò¬ì</a></li>
-                    <li>
-                        <a href="../04-masterpiece/SC_Page_masterpiece_English.html">­^¤å¦Ò¬ì</a>
-                        
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">¾ú©¡¸ÕÃD</a>
-                <ul>
-                    <li><a href="#">¨Ì¦U¦Ò¬ì¤ÀÃþ<span class="arrow-right"></span></a>
-						<ul>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">°ê¤å</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">­^¤å</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">¼Æ¾Ç</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">ªÀ·|</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_subject.html">¦ÛµM</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">¨Ì¾Ç¦~«×¤ÀÃþ<span class="arrow-right"></span></a>
-                        <ul>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">104</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">103</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">102</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">101</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">100</a></li>
-                            <li><a href="../05-pastpaper/SC_Page_pastpaper_year.html">99</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-             <li>
-                <a class="main_content_link_setting" href="../06-statistic/SC_Page_statistic.html">²Î­p¸ê®Æ</a>
-            </li>
-             <li >
-                <a class="main_content_link_setting" href="../07-form/SC_Page_form.html" style="border-right: 1px solid #fff;">¬ÛÃöªí®æ</a>
-            </li>
-
-    </ul>
-    </div>
-    </div>
-    </nav>
+<%@include  file="SCNavbar.jspf" %>
 <div class="wrap"> 
     <div class="main_content">
+      	
 
       	<div class="main_content_down">
       		<div class="main_content_down_block">
       			<div class="main_content_down_block_title">
       				<p style="color:#0062FF; font-size:24px; font-family: Microsoft JhengHei;">
-      					¾ú©¡¸ÕÃD
+      					æ­·å±†è©¦é¡Œ
 						<!--arrow-->
-						<font color="#00AAFF"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </font><font color="#FFC000">¨Ì¦U¦Ò¬ì¤ÀÃþ</font>
-						<font color="#FFC000"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </font><font color="#404040">
-						<!-- ¸ê®Æ®w¿é¤J -->
-						
-						<c:choose>
-						
-							<c:when test="${param.subject == 'Chinese'}" >
-								°ê¤å
-							</c:when>
-
-							<c:when test="${param.subject == 'English'}" >
-								­^¤å
-							</c:when>
-							
-							<c:when test="${param.subject == 'Math'}" >
-								¼Æ¾Ç
-							</c:when>
-
-							<c:when test="${param.subject == 'Society'}" >
-								ªÀ·|
-							</c:when>
-							
-							<c:when test="${param.subject == 'Science'}" >
-								¦ÛµM
-							</c:when>
-
-					    </c:choose>
+						<font color="#00AAFF"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </font><font color="#FFC000">ä¾å„è€ƒç§‘åˆ†é¡ž</font>
+						<font color="#FFC000"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> </font><font color="#404040"><!-- è³‡æ–™åº«è¼¸å…¥ -->
+						<%
+      						String subject = new String(request.getParameter("subject").getBytes("ISO-8859-1"), "utf-8");
+						%>
+							<font><%=subject %></font>
 						</font>
       				</p>
       			</div>
@@ -159,32 +56,54 @@
 					<col style="width: 134px">
 					</colgroup>
 					  <tr>
-					    <th rowspan="2" bgcolor="#FFD966">¾Ç¦~«×</th>
-					    <th colspan="2" bgcolor="#91DCFD">¤@¯ë¸ÕÃD</th>
-					    <th colspan="2" bgcolor="#91DCFD">¸ÕÃDµª®×</th>
-					    <th colspan="2" bgcolor="#88DE7C">»y­µ¸ÕÃD</th>
+					    <th rowspan="2" bgcolor="#FFD966">å­¸å¹´åº¦</th>
+					    <th colspan="2" bgcolor="#91DCFD">ä¸€èˆ¬è©¦é¡Œ</th>
+					    <th colspan="2" bgcolor="#91DCFD">è©¦é¡Œç­”æ¡ˆ</th>
+					    <th colspan="2" bgcolor="#88DE7C">èªžéŸ³è©¦é¡Œ</th>
 					  </tr>
 					  <tr>
-					    <td bgcolor="#91DCFD">PDFÀÉ</td>
-					    <td bgcolor="#91DCFD">WordÀÉ</td>
-					    <td bgcolor="#91DCFD">¿ï¾ÜÃDµª®×</td>
-					    <td bgcolor="#91DCFD">«D¿ï¾ÜÃDµû¤À­ì«h</td>
-					    <td bgcolor="#88DE7C">¸ÕÃD¤º®e</td>
-					    <td bgcolor="#88DE7C">§Ç¸¹¤º®e¹ï·Óªí</td>
+					    <td bgcolor="#91DCFD">PDFæª”</td>
+					    <td bgcolor="#91DCFD">Wordæª”</td>
+					    <td bgcolor="#91DCFD">é¸æ“‡é¡Œç­”æ¡ˆ</td>
+					    <td bgcolor="#91DCFD">éžé¸æ“‡é¡Œè©•åˆ†åŽŸå‰‡</td>
+					    <td bgcolor="#88DE7C">è©¦é¡Œå…§å®¹</td>
+					    <td bgcolor="#88DE7C">åºè™Ÿå…§å®¹å°ç…§è¡¨</td>
 					  </tr>
-					  <!-- ¸ê®Æ®w¿é¤J -->
+					  <!-- è³‡æ–™åº«è¼¸å…¥ -->
 					  <c:forEach items="${pastPaperList}" var="pastPaper">
 					  <tr bgcolor="#E0E0E0">
-					    <td><!-- ¸ê®Æ®w¿é¤J -->${pastPaper.pastPaperYear}</td>
-					    <td><a href="${pastPaper.pastPaperPDF}"><font color="#000000">¤U¸ü</font></a></td>
-					    <td><a href="${pastPaper.pastPaperWORD}"><font color="#000000">¤U¸ü</font></a></td>
-					    <td><a href="${pastPaper.pastPaperAnswer}"><font color="#000000">¤U¸ü</font></a></td>
-					    <td><a href="${pastPaper.pastPaperScore}"><font color="#000000">¤U¸ü</font></a></td>
-					    <td><a href="¸ÕÃD¤º®e"><font color="#000000">¤U¸ü</font></a></td>
-					    <td><a href="§Ç¸¹¤º®e¹ï·Óªí"><font color="#000000">¤U¸ü</font></a></td>
+					    <td><!-- è³‡æ–™åº«è¼¸å…¥ -->${pastPaper.pastPaperYear}</td>
+					    <td><a href="${pastPaper.pastPaperPDF}"><font color="#000000">ä¸‹è¼‰</font></a></td>
+					    <td><a href="${pastPaper.pastPaperWORD}"><font color="#000000">ä¸‹è¼‰</font></a></td>
+					    <td><a href="${pastPaper.pastPaperAnswer}"><font color="#000000">ä¸‹è¼‰</font></a></td>
+					    <c:choose> 
+  							<c:when test="${!pastPaper.pastPaperScore.equals(s)}">
+    							<td><a href="${pastPaper.pastPaperScore}"><font color="#000000">ä¸‹è¼‰</font></a></td>
+  							</c:when>
+  							<c:otherwise>
+   								<td></td> 				
+  							</c:otherwise>
+						</c:choose>					  
+					    <c:choose> 
+  							<c:when test="${!pastPaper.pastPaperVoice.equals(s)}">
+    							<td><a href="${pastPaper.pastPaperVoice}"><font color="#000000">ä¸‹è¼‰</font></a></td>
+  							</c:when>
+  							<c:otherwise>
+   								<td></td> 				
+  							</c:otherwise>
+						</c:choose>
+					    <c:choose> 
+  							<c:when test="${!pastPaper.pastPaperVTable.equals(s)}">
+    							<td><a href="${pastPaper.pastPaperVTable}"><font color="#000000">ä¸‹è¼‰</font></a></td>
+  							</c:when>
+  							<c:otherwise>
+   								<td></td> 				
+  							</c:otherwise>
+						</c:choose>
 					  </tr>
 					  </c:forEach>
-					  <!-- ¸ê®Æ®w¿é¤J -->					  
+					  <!-- è³‡æ–™åº«è¼¸å…¥ -->
+
 				</table>
 				</div>
       			</div>
@@ -193,109 +112,6 @@
 
     </div>
 </div><!-- wrap -->
-	
-<footer class="footer"><!--©³³¡navbar-->
-	
-	<div class="footer_left">
-		<div class="footer_left_left">
-			<p align="right" style="font-family: Microsoft JhengHei;" >»{ÃÑ¤¤¤ß</p>
-		</div>
-
-		<div class="footer_left_right">
-			<p style="padding-left:20px;" class="footer_text_setting" >
-				<a class="footer_left_link_setting" href="../../FooterRelativePage/01-aboutcenter/aboutcenter_introduction.html">
-					Â²¤¶
-				</a>
-			</p>
-			<p style="padding-left:20px;" class="footer_text_setting" >
-				<a class="footer_left_link_setting" href="../../FooterRelativePage/01-aboutcenter/aboutcenter_structure.html">
-					²ÕÂ´¬[ºc
-				</a>
-			</p>
-			<p style="padding-left:20px;" class="footer_text_setting" >
-				<a class="footer_left_link_setting" href="../../FooterRelativePage/01-aboutcenter/aboutcenter_office.html">
-					¦U³æ¦ìÂ¾´x
-				</a>
-			</p>
-		</div>
-	</div>
-	
-	<span class="footer_mid">
-		<span class="footer_mid_left">
-			<p align="center" style="font-family: Microsoft JhengHei;">´úÅç¦Ò¸Õ</p>
-		</span>
-
-		<span class="footer_mid_right">
-			<p class="footer_text_setting">
-				<a class="footer_left_link_setting" href="../../SC_Page/SCIndexView.html">
-					¾Ç¬ì¯à¤O´úÅç
-				</a>
-			</p>
-			<p class="footer_text_setting">
-				<a class="footer_left_link_setting" href="../../SS_Page/SSIndexView.html">
-					«ü©w¬ì¥Ø¦Ò¸Õ
-				</a>
-			</p>
-			<p class="footer_text_setting">
-				<a class="footer_left_link_setting" href="../../EL_Page/ELIndexView.html">
-					­^¤åÅ¥¤O´úÅç
-				</a>
-			</p>
-		</span>
-	</span>
-	
-	<div class="footer_right">
-		<div class="footer_right_top">
-			<div class="footer_right_top_left_one">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/02-downloadregion/downloadregion_allsoftware.html">
-						¤U¸ü±M°Ï
-					</a>
-				</p>
-			</div>
-			<span class="footer_right_top_left_two">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/03-syllabuschange/syllabuschange.html">
-						½Òºõ²§°Ê
-					</a>
-				</p>
-			</span>
-			<span class="footer_right_top_left_three">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/04-relativewebsite/Relativewebsite.html">
-						¬ÛÃöºô¯¸
-					</a>
-				</p>
-			</span>
-			<div class="footer_right_top_left_four">
-				<p align="center" style="font-family: Microsoft JhengHei;">
-					<a class="footer_right_link_setting" href="../../FooterRelativePage/05-other/other.html">
-						¨ä¥L¸ê°T
-					</a>
-				</p>
-			</div>
-		</div>
-
-		<div class="footer_right_down">
-			<p style="padding-left:20px;margin-top:0px;font-size:11.5px;color:#696969;font-family: Microsoft JhengHei;">
-				&nbsp;&nbsp;Á`¾÷¡G(02)2366-1416¡@
-					  »y­µ¬d¸ß¡G(02)2364-3677¡@
-					  ¶Ç¯u¡G(02)2362-0755 
-				<br>
-				&nbsp;&nbsp;¦a§}¡G10673 ¥x¥_¥«¦à¤s¸ô237¸¹
-					  «H½c¡G10099 »O¥_¶l¬F71-64¸¹
-			</p>
-			
-		</div>
-	</div>
-</footer>
-
-
-
-
-
-    
-  
-
+<%@include  file="SystemFooter.jspf" %>
 </body>
 </html>

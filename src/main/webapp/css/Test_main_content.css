@@ -1,0 +1,561 @@
+/*.main_content_container{
+	height: 100%;
+	padding-top: 262px;
+    padding-bottom: 262px;
+    
+     box-sizing: border-box;
+}*/
+.wrap {
+	padding-top: 110px;
+ min-height: 78.1%;
+ position: relative;
+}
+.main_content{
+	display: flex;
+	position: relative;
+	padding-bottom:20px; 
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	/*border: 1px solid #000000;*/
+}
+.main_content_topbar{
+	position: absolute;
+	top: 130px;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+}
+.main_content_down{
+	position: relative;
+	top: -10px;
+	padding-top: 15px;
+	width: 100%;
+}
+.main_content_down_block{
+	position: relative;
+	padding-top: 30px;
+	left: 22.5%;
+	width: 55%;
+	min-height: 431px;
+	border: 1.8px solid #D6D6D6;
+}
+.main_content_down_block_title{
+	position: relative;
+	padding-left:40px;  
+	height: 40px;
+	/*border: 1.8px solid #D6D6D6;*/
+}
+
+.main_content_down_block_contain{
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 25px;  
+	padding-left:50px;
+	padding-right:50px; 
+	/*border: 1.8px solid #000000;*/
+}
+.main_content_down_block_right{
+	top:-40px;
+	position: relative;
+	padding-right:40px;
+	left: 20%;
+	width: 80%;
+	/*border: 1.8px solid #000000;*/
+}
+.main_content_down_block_top{
+	position: relative;
+	padding-top: 10px; 
+	height: 40px;
+	width: 100%;
+	border: 1.8px solid #FF0000;
+	font-size:12px;
+	color:red;
+	text-align:center;
+	font-family: Microsoft JhengHei;
+}
+.main_content_down_block_down{
+	position: relative;
+	padding-top: 30px;
+	width: 100%;
+	/*border: 1.8px solid #FF006E;*/
+}
+
+	/*setting*/
+.main_content_link_setting{
+	color: #000000;
+	text-decoration:none;
+}
+.main_content_link_setting:hover{
+	color: #DF1F8F;
+	text-decoration:none;
+}
+.index_main_content_down_block{
+	position: relative;
+	left: 22.5%;
+	width: 55%;
+}
+.index_main_content_down_left{
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 49.5%;
+	border-right: 1px solid #6495ED;
+
+}
+
+.index_main_content_down_right{
+	position: relative;
+	float: left;
+	padding-left: 20px; 
+	left:-0.9px;
+	height: 100%;
+	width: 49.5%;
+	border-left: 1px solid #6495ED;
+}
+/*下面是bar的css*/
+ ul.navigation, ul.navigation li, ul.navigation ul, a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    z-index: 1000;/*設定圖層 數字越大越上層*/
+}
+ul.navigation,ul.navigation li {
+    list-style: none;
+}
+
+ul.navigation li {
+    position: relative;
+    float: left;
+}
+/* 選單 li 裡面連結之樣式 */
+ul.navigation li a{
+    font-family: Microsoft JhengHei;
+    display: block;
+    padding: 0 20px;
+    background: #FFF;
+    color: #000;
+    
+}
+/* 特定在第一層，以左邊灰線分隔 */
+ul.navigation > li > a{
+    border-bottom: 1px solid #FFFFFF;    
+    border-right: 1px solid #99BBFF;
+}
+ul.navigation > li > a:hover{
+    color: #000;
+    background: #fff;
+    color: #DF1F8F;
+    text-decoration:none;
+}
+
+/* 特定在第一層 > 第二層之後下拉部分之樣式 */
+ul.navigation li ul{
+    display: none;
+    float: left;
+    position: absolute;
+    left: 0;    
+    margin: 0;
+    color: #6D6D6D;        
+    background: #EEE;
+    font-size: 15px;
+}
+/* 當第一層選單被觸發時，指定第二層顯示 */
+ul.navigation li:hover > ul{
+    display: block;
+}
+/* 特定在第二層或之後下拉部分 li 之樣式 */
+ul.navigation ul li {
+    border-bottom: 1px solid #DDD;
+}
+/* 特定在第二層或之後下拉部分 li （最後一項不要底線）之樣式 */
+ul.navigation ul li:last-child {
+    border-bottom: none;
+}
+
+/* 第二層或之後 選單 li 之樣式 */
+ul.navigation ul a {
+    width: 140px;
+    padding: 10px 12px;    
+    color: #fff;        
+    background: #A0A0A0;
+    
+}
+ul.navigation ul a:hover {        
+    background: #CCC;    
+}
+/* 第三層之後，上一層的選單觸發則顯示出來（皆為橫向拓展） */
+ul.navigation ul li:hover > ul{
+    display: block;
+    position: absolute;
+    top: 0;    
+    left: 100%;
+    color: #fff;        
+    background: #C0C0C0;
+}
+
+ul.navigation ul li ul a{
+    width: 120px;
+    padding: 10px 12px;    
+    color: #fff;        
+    background: #B2B2B2;
+    
+}
+
+/* 箭頭向下 */
+.arrow-bottom {
+    display: inline-block;
+    margin-left: 5px;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;    
+    border-left: 4px solid transparent;        
+    width: 1px;
+    height: 1px;
+}
+/* 箭頭向右 */
+.arrow-right {
+    display: inline-block;
+    margin-left: 20px;    
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid #666;        
+    width: 1px;
+    height: 1px;
+
+}
+
+
+
+/*最新消息及考試日程的表格*/
+.TableForNews {
+	margin:0px;padding:0px;
+	width:100%;
+	border:0px solid #ffffff;
+	
+
+}.TableForNews table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+
+}
+.TableForNews td{
+	vertical-align:middle;
+	
+	background-color:#E0E0E0;
+
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	text-align:left;
+	padding:16px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:normal;
+	color:#000000;
+}
+
+.TableForNews td:first-child{
+	min-width: 130px;
+	background-color:#ffff7c;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:5px 5px 5px 5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:bold;
+	color:#606060;
+}
+
+.TableForNews td:first-child{
+	border-width:5px 5px 5px 5px;
+}
+.TableForNews td:last-child{
+	min-width: 350px;
+}
+
+.TableForNews td:last-child:hover{
+	background-color:#D9D9D9;
+		
+
+}
+
+
+
+/*參考佳作的表格nth-child(2n+3)*/
+.TableFormasterpiece {
+	margin:0px;padding:0px;
+	width:100%;
+	border:0px solid #ffffff;
+	
+
+}.TableFormasterpiece table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+
+}
+.TableFormasterpiece td{
+	vertical-align:middle;
+	background-color:#E0E0E0;
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	text-align:center;
+	padding:10px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:normal;
+	color:#000000;
+}
+
+.TableFormasterpiece td:first-child{
+	min-width: 100px;
+	background-color:#ADEA76;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:5px 5px 5px 5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:bold;
+	color:#606060;
+}
+.TableFormasterpiece td:first-child{
+	border-width:5px 5px 5px 5px;
+}
+.TableFormasterpiece td:last-child{
+	min-width: 250px;
+}
+
+.TableFormasterpiece td:last-child:hover{
+	background-color:#D9D9D9;
+		
+}
+/*參考佳作內容的表格*/
+.TableForMasterpiece_C {
+	margin:0px;padding:0px;
+	width:100%;
+	border:0px solid #ffffff;
+	
+
+}.TableForMasterpiece_C table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+	min-width: 100px;
+	background-color:#D1FF75;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:5px 5px 5px 5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:bold;
+	color:#606060;
+
+}
+.TableForMasterpiece_C td{
+	vertical-align:middle;
+	
+	background-color:#E0E0E0;
+
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	text-align:center;
+	padding:3px 10px;
+	padding-top:8px;
+	padding-bottom:8px;  
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:normal;
+	color:#000000;
+}
+
+.TableForMasterpiece_C tr:first-child td{
+	
+	min-width: 100px;
+	background-color:#D1FF75;
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:bold;
+	color:#303030;
+}
+
+.TableForMasterpiece_C tr:first-child{
+	border-width:5px 5px 5px 5px;
+}
+.TableForMasterpiece_C tr:last-child{
+	min-width: 350px;
+}
+
+/*歷屆試題的表格nth-child(2n+3)*/
+.TableForPastpaper  {
+	border-collapse:collapse;
+	border-spacing:0;
+
+}
+.TableForPastpaper td{
+	vertical-align:middle;
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	text-align:center;
+	padding:5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:normal;
+	color:#000000;
+	overflow:hidden;
+	word-break:normal;
+}
+
+.TableForPastpaper th{
+	vertical-align:middle;
+
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	text-align:center;
+	padding:5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:normal;
+	color:#000000;
+	overflow:hidden;
+	word-break:normal;
+}
+
+/*按鈕*/
+.button{
+	vertical-align:middle;
+	border:0px solid #0035FF;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;  
+	font-size:16px;
+	background-color:#005FFF; 
+	font-family:Microsoft JhengHei;
+	color: #FFFFFF;
+	border-radius: 10%;
+}
+.button:hover{
+	background-color:#476DFF; 
+}
+
+
+
+/*參考資料的表格*/
+.TableForStatistic {
+	margin:0px;padding:0px;
+	width:100%;
+	border:0px solid #ffffff;
+	
+
+}.TableForStatistic table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+	min-width: 100px;
+	background-color:#91DCFD;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:5px 5px 5px 5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:bold;
+	color:#606060;
+
+}
+.TableForStatistic td{
+	vertical-align:middle;
+	
+	background-color:#E0E0E0;
+
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	text-align:left;
+	padding:10px;
+	padding-top:8px;
+	padding-bottom:8px;  
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:normal;
+	color:#000000;
+}
+
+.TableForStatistic tr:first-child td{
+	
+	min-width: 100px;
+	background-color:#91DCFD;
+	border:0px solid #ffffff;
+	border-width:5px 5px 5px 5px;
+	font-size:16px;
+	font-family:Microsoft JhengHei;
+	font-weight:bold;
+	color:#303030;
+}
+
+.TableForStatistic tr:first-child{
+	border-width:5px 5px 5px 5px;
+}
+.TableForStatistic tr:last-child{
+	min-width: 350px;
+}
+
+/*相關表格的表格*/
+.TableForForm  {
+	border-collapse:collapse;
+	border-spacing:0;
+
+}
+.TableForForm td{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:14px;
+	padding:10px 20px;
+	border-style:solid;
+	border-width:5px;
+	border-color: #FFFFFF;
+	overflow:hidden;
+	word-break:normal;
+}
+.TableForForm th{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 20px;
+	border-style:solid;
+	border-width:5px;
+	border-color: #FFFFFF;
+	overflow:hidden;
+	word-break:normal;
+}
+.TableForForm .TableForForm-sent{
+	font-size:16px;
+	background-color:#adf376;
+	color:#036400;
+}
+
+.TableForForm .TableForForm-n4qj{
+	font-size:16px;
+	background-color:#e6e6e6;
+	color:#434343;
+}
+.TableForForm .TableForForm-n4qj:hover{
+	background-color:#DBDBDB;
+}
+.TableForForm .TableForForm-82wu{
+	font-size:16px;
+	background-color:#e6e6e6;
+	color:#434343;vertical-align:top;
+}
+.TableForForm .TableForForm-82wu:hover{
+	background-color:#DBDBDB;
+}
+

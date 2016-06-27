@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+          <div style="float: right; padding:12px;">
+          <ul class="navigation">
+            <li>
+                <a style="width:100px;">新增</a>
+                <ul>
+                    <li>
+                        <a href="Manager_Add?mes=test">測驗項目</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=testnews">消息</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=schedule">時程</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=masterpiece">參考佳作</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=referencepaper">參考試卷</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=pastpaper">歷屆試題</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=statistic">統計資料</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=form">相關表格</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Add?mes=question">問題解答</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a style="border-right: 1px solid #FFFFFF; width:100px;">刪除／修改</a>
+                <ul>
+                    <li>
+                        <a href="Manager_Delete?mes=test">測驗項目</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=testnews">消息</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=schedule">時程</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=masterpiece">參考佳作</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=referencepaper">參考試卷</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=pastpaper">歷屆試題</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=statistic">統計資料</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=form">相關表格</a>
+                    </li>
+                    <li>
+                        <a href="Manager_Delete?mes=question">問題解答</a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+        </div>

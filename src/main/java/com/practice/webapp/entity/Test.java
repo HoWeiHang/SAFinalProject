@@ -2,9 +2,16 @@ package com.practice.webapp.entity;
 
 
 public class Test{
+	private int testId;
 	private String category;
 	private String introduction;
 	private String brochure;
+	public int getTestId() {
+		return testId;
+	}
+	public void setTestId(int testId) {
+		this.testId = testId;
+	}
 	public String getCategory() {
 		return category;
 	}

@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class PastPaper{
 	private int pastPaperId;
-	private int pastPaperYear;
+	private String pastPaperYear;
 	private String pastPaperSubject;
 	private String pastPaperPDF;
 	private String pastPaperWORD;
@@ -19,10 +19,10 @@ public class PastPaper{
 	public void setPastPaperId(int pastPaperId) {
 		this.pastPaperId = pastPaperId;
 	}
-	public int getPastPaperYear() {
+	public String getPastPaperYear() {
 		return pastPaperYear;
 	}
-	public void setPastPaperYear(int pastPaperYear) {
+	public void setPastPaperYear(String pastPaperYear) {
 		this.pastPaperYear = pastPaperYear;
 	}
 	public String getPastPaperSubject() {

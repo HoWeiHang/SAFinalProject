@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,38 +18,44 @@
 			<div class="col-md-6">
 				<form method="post" action="insertNews" id="insertForm">
 					<div class="form-group">
-					    <label for="title">¼ÐÃD</label>
-						<input type="text" class="form-control" id="title" name="title" placeholder="¼ÐÃD">
+					    <label for="title">æ¨™é¡Œ</label>
+						<input type="text" class="form-control" id="title" name="title" placeholder="æ¨™é¡Œ">
+				  	</div>
+				  	
+				  	<div class="form-group">
+					    <label for="issuePerson">ç™¼å¸ƒäººå“¡</label>
+						<input type="text" class="form-control" id="issuePerson" name="issuePerson" placeholder="ç™¼å¸ƒäººå“¡">
 				  	</div>
 				  	<div class="form-group">
-					    <label for="issuePerson">µo¥¬¤H­û</label>
-						<input type="text" class="form-control" id="issuePerson" name="issuePerson" placeholder="¼ÐÃD">
-				  	</div>
-				  	<div class="form-group">
-					    <label for="articleCategory.id">®Éµ{¶µ¥Ø</label>
-				  		<select class="form-control" id="articleCategory.id" name="articleCategory.id">
-				  		<c:forEach items="${articleCategoryList}" var="articleCategory">
-					  		<option value="${articleCategory.id}">
-					  			${articleCategory.name}
+				
+					    <label for="schedule.scheduleId">æ™‚ç¨‹é …ç›®</label>
+				  		<select class="form-control" id="schedule.scheduleId" name="schedule.scheduleId">
+				  		<c:forEach items="${scheduleList}" var="schedule">
+					  		<option value="${schedule.scheduleId}">
+					  			${schedule.scheduleName}
 				  			</option>
 				  		</c:forEach>
 						</select>
-				  	</div>
+				  	</div> 
+				  	
 				  	<div class="form-group">
-					    <label for="test.category">´úÅç¶µ¥Ø</label>
-				  		<select class="form-control" id="test.category" name="test.category">
+				 <!--     <label for="test.testId">æ¸¬é©—é …ç›®</label>
+					<input type="text" class="form-control" id="test.testId" name="test.testId" placeholder="æ¨™é¡Œ">  -->
+				  	
+					    <label for="test.testId">æ¸¬é©—é …ç›®</label>
+				  		<select class="form-control" id="test.testId" name="test.testId">
 				  		<c:forEach items="${testCategoryList}" var="testCategory">
-					  		<option value="test.category">
+					  		<option value="${testCategory.testId}">
 					  			${testCategory.category}
 				  			</option>
 				  		</c:forEach>
 						</select>
-				  	</div>
+				  	</div>  
 				  	<div class="form-group">
-					    <label for="content">¤º®e</label>
+					    <label for="content">å…§å®¹</label>
 				  		<textarea class="form-control" rows="3" id="content" name="content"></textarea>
 				  	</div>
-					<button type="submit" class="btn btn-primary">·s¼W</button>
+					<button type="submit" class="btn btn-primary">æ–°å¢ž</button>
 				</form>
 			</div>
 			<div class="col-md-3"></div>

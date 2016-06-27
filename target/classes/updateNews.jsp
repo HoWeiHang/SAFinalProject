@@ -23,18 +23,33 @@
 						<input type="text" class="form-control" id="title" name="title" placeholder="標題" value="${news.title}">
 				  	</div>
 				  	<div class="form-group">
-					    <label for="articleCategory.id">分類</label>
-				  		<select class="form-control" id="articleCategory.id" name="articleCategory.id">
-				  		<c:forEach items="${articleCategoryList}" var="articleCategory">
-					  		<option value="${articleCategory.id}" ${article.articleCategory.id==articleCategory.id?'selected':''}>
-					  			${articleCategory.name}
+				
+					    <label for="schedule.scheduleId">時程項目</label>
+				  		<select class="form-control" id="schedule.scheduleId" name="schedule.scheduleId">
+				  		<c:forEach items="${scheduleList}" var="schedule">
+					  		<option value="${schedule.scheduleId}" ${schedule.test.testId==test.testId?'selected':''}>
+					  			${schedule.scheduleName}
+				  			</option>
+				  		</c:forEach>
+						</select>
+				  	</div> 
+				  	
+				  	<div class="form-group">
+				 <!--     <label for="test.testId">測驗項目</label>
+					<input type="text" class="form-control" id="test.testId" name="test.testId" placeholder="標題">  -->
+				  	
+					    <label for="test.testId">測驗項目</label>
+				  		<select class="form-control" id="test.testId" name="test.testId">
+				  		<c:forEach items="${testCategoryList}" var="testCategory">
+					  		<option value="${testCategory.testId}" ${news.test.testId==test.testId?'selected':''}>
+					  			${testCategory.category}
 				  			</option>
 				  		</c:forEach>
 						</select>
 				  	</div>  
 				  	<div class="form-group">
 					    <label for="content">內容</label>
-				  		<textarea class="form-control" rows="3" id="content" name="content">${news.content}</textarea>
+				  		<textarea class="form-control" rows="3" id="content" name="content" >${news.content}</textarea>
 				  	</div>
 				  	<div class="form-group">
 					    <label for="issuePerson">發布人員</label>

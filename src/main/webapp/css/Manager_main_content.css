@@ -1,0 +1,394 @@
+/*.main_content_container{
+	height: 100%;
+	padding-top: 262px;
+    padding-bottom: 262px;
+    
+     box-sizing: border-box;
+}*/
+.wrap {
+ min-height: 87.1%;
+ position: relative;
+}
+.main_content{
+	position: relative;
+	top: 30px;
+	left: 0px;
+	right: 0px;
+	background-color: #FFF;
+	font-family: Microsoft JhengHei;
+}
+.main_content_block{
+	position: relative; 
+	left:17.5%;
+	height: 100%;
+	min-height: 550px;
+	width: 65%;
+	top: 2%;
+	padding-bottom:30px; 
+	/*border: 1px solid red;*/
+}
+.main_content_block_top{
+	position: relative;
+	height: 15%;
+	width: 100%;
+	/*border: 1.8px solid #D6D6D6;*/
+}
+.main_content_block_down{
+	position: relative;
+	padding: 3% 3%;
+	padding-top:55px; 
+	top: 15%;
+	height: 85%;
+	width: 100%;
+	/*border: 1.8px solid #D6D6D6;*/
+}
+
+
+.Login_content_block{
+	position: relative;
+	padding: 45px 10%; 
+	left: 22%;
+	height: 100%;
+	min-height: 550px;
+	width: 56%;
+	top: 2%;
+	border: 1.8px solid #D6D6D6;
+}
+.Login_content_block_top{
+	position: relative;
+	height: 15%;
+	width: 100%;
+	/*border: 1.8px solid #D6D6D6;*/
+}
+.Login_content_block_down{
+	position: relative;
+	padding: 3%;
+	padding-right:12%;
+	padding-left:12%; 
+	top: 15%;
+	height: 85%;
+	width: 100%;
+	/*border: 1.8px solid #D6D6D6;*/
+}
+
+
+
+
+.LoginField {
+
+  width: 50%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  margin: 5px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.LoginField:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.greenbutton{
+	vertical-align:middle;
+	border:0px solid #A0D9A0;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;  
+	font-size:16px;
+	background-color:#43B645; 
+	font-family:Microsoft JhengHei;
+	color: #FFFFFF;
+	border-radius: 10%;
+}
+
+
+
+/*下面是bar的css*/
+ ul.navigation, ul.navigation li, ul.navigation ul, a{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000;/*設定圖層 數字越大越上層*/
+}
+ul.navigation,ul.navigation li {
+    list-style: none;
+}
+
+ul.navigation li {
+    position: relative;
+    float: left;
+    text-align: left;
+
+}
+/* 選單 li 裡面連結之樣式 */
+ul.navigation li a{
+    font-family: Microsoft JhengHei;
+    display: block;
+    padding: 0;
+    background: #FFF;
+    color: #000;
+    
+}
+/* 特定在第一層，以左邊灰線分隔 */
+ul.navigation > li > a{
+    border-bottom: 1px solid #FFFFFF;    
+    border-right: 1px solid #4864FF;
+}
+ul.navigation > li > a:hover{
+    color: #000;
+    background: #fff;
+    color: #DF1F8F;
+    text-decoration:none;
+}
+
+/* 特定在第一層 > 第二層之後下拉部分之樣式 */
+ul.navigation li ul{
+    display: none;
+    float: left;
+    position: absolute;
+    left: 0;    
+    margin: 0;
+    color: #6D6D6D;        
+    background: #E8E8E8;
+    font-size: 15px;
+
+}
+/* 當第一層選單被觸發時，指定第二層顯示 */
+ul.navigation li:hover > ul{
+    display: block;
+}
+
+/* 特定在第二層或之後下拉部分 li （最後一項不要底線）之樣式 */
+ul.navigation ul li:last-child {
+    border-bottom: none;
+}
+
+/* 第二層或之後 選單 li 之樣式 */
+ul.navigation ul a {
+    width: 100px;
+    padding: 10px;    
+    color: #404040;        
+    background: #E8E8E8;
+    
+}
+ul.navigation ul a:hover {        
+    background: #CCC;    
+}
+/* 第三層之後，上一層的選單觸發則顯示出來（皆為橫向拓展） */
+ul.navigation ul li:hover > ul{
+    display: block;
+    position: absolute;
+    top: 0;    
+    left: 100%;
+    color: #404040;        
+    background: #E8E8E8;
+}
+
+ul.navigation ul li ul a{
+    width: 100px;
+    padding: 10px 12px;   
+    color: #404040;        
+    background: #E8E8E8;
+    
+}
+
+
+
+.addTable  {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.addTable td{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:16px;
+	padding:2% 5%;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+	border-color: #0074C1;
+	color: #000000;
+	vertical-align: center;
+}
+.addTable th{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	padding:2% 5%;
+	border-style:solid;
+	border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-color: #0074C1;
+	color: #000000;
+	vertical-align: center;
+}
+.addTable .addTable-rf6n{
+	font-size:18px;
+	padding:2% 5% ;
+	background-color:#96e8ff;
+}
+
+
+.text_Field {
+
+  width: 95%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 5px;
+  }
+
+.addbutton{
+	vertical-align:middle;
+	border:0px solid #0094FF;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;  
+	font-size:16px;
+	background-color:#1EA1FF; 
+	font-family:Microsoft JhengHei;
+	color: #FFFFFF;
+	border-radius: 10%;
+}
+
+.updatebutton{
+	vertical-align:middle;
+	border:0px solid #5EA063;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;  
+	font-size:16px;
+	background-color:#72AA76; 
+	font-family:Microsoft JhengHei;
+	color: #FFFFFF;
+	border-radius: 10%;
+}
+
+.updateTable  {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.updateTable td{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:16px;
+	padding:2% 5%;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+	border-color: #5EA063;
+	color: #000000;
+	vertical-align: center;
+}
+.updateTable th{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	padding:2% 5%;
+	border-style:solid;
+	border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-color: #5EA063;
+	color: #000000;
+	vertical-align: center;
+}
+.updateTable .updateTable-rf6n{
+	font-size:18px;
+	padding:2% 5% ;
+	background-color:#B9E59D;
+}
+
+
+.deleteTable  {
+	border-collapse:collapse;
+	border-spacing:0;
+
+}
+.deleteTable td{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:14px;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-style:solid;
+	border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-color: #FFB800;
+}
+.deleteTable th{
+	font-family:Microsoft JhengHei, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 5px;
+	order-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+	border-style:solid;
+	border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-color: #FFB800;
+}
+.deleteTable .deleteTable-3ei2{
+	font-size:18px;
+	font-family:Microsoft JhengHei, sans-serif;
+	background-color:#FFD465;
+	color:#000000;
+	text-align:center;
+	vertical-align: center;
+	border-style:solid;
+	border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-color: #FFB800;
+}
+.deleteTable .deleteTable-kik3{
+	font-size:16px;
+	font-family:Microsoft JhengHei, sans-serif;
+	color:#000000;
+	text-align:center;
+	vertical-align: center;
+	border-style:solid;
+	border-width:1px;overflow:hidden;
+	word-break:normal;
+	border-color: #FFB800;
+}
+
+
+.deletebutton{
+	vertical-align:middle;
+	border:0px solid #A80000;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+	padding:5px;
+	padding-left:15px;
+	padding-right:15px;  
+	font-size:16px;
+	background-color:#ED445D; 
+	font-family:Microsoft JhengHei;
+	color: #FFFFFF;
+	border-radius: 10%;
+}

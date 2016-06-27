@@ -1,0 +1,377 @@
+/*.main_content_container{
+	height: 100%;
+	padding-top: 262px;
+    padding-bottom: 262px;
+    
+     box-sizing: border-box;
+}*/
+.wrap {
+ min-height: 87.1%;
+ position: relative;
+}
+.main_content{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	/*background-color: yellow;*/
+}
+.main_content_top{  
+	position: relative;  
+	width: 100%;
+	height: 50%;
+	z-index: 5;
+}
+.main_content_down{  
+	position: relative;  
+	width: 100%;
+	height: 50%;
+	margin-top:1.5%; 
+		/*border: 2px solid #548C00;*/
+}
+.main_content_down_left{  
+	position: relative;  
+	width: 59%;
+	height: 100%;
+		/*border: 2px solid red;*/
+}
+
+	/*invisible down left container*/
+.main_content_down_left_container{
+	position: relative;  
+	padding-top:0px; 
+	width: 61%;
+	height: 100%;
+	left: 39%;
+			/*border: 2px solid red;*/
+}
+
+	/*其他消息 green block*/
+.main_content_down_left_container_block{
+	height: 255px;
+	width: 95%;
+	position: relative;
+	top: 0px;
+	left: 13px;
+	background-color: #98F898;
+	border-radius: 25px;
+	border: 1.5px solid #548C00;
+}
+
+	/*more*/
+.main_content_down_left_container_block_blockOfMore{
+	height: 5%;
+	width: 97%;
+	position: absolute;
+	top: 90%;
+	left: 6px;
+	background-color: #98F898;
+}
+
+	/*white area*/
+.main_content_down_left_container_block_blockOfNews{
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px; 
+	height: 70%;
+	width: 95.3%;
+	position: absolute;
+	top: 45px;
+	left: 12px;
+	background-color: #FFF;
+	border: 1.5px solid #548C00;
+}
+.main_content_down_right{  
+	position: absolute;  
+	top:0px;
+	width: 40%;
+	height: 255px;
+	left: 59%;
+
+}
+
+	/*invisible down left container*/
+.main_content_down_right_container{
+	position: relative;  
+	width: 45%;
+	height: 100%;
+}
+
+	/*red block*/
+.main_content_down_right_container_block{  
+	height: 80%;
+	width: 65%;
+	position: relative;
+	top: 30px;
+	left: 18%;
+	/*border: 1px solid #000000;*/
+}
+
+	/*red block top*/
+.main_content_down_right_container_block_top{  
+	height: 34%;
+	width: 100%;
+	position: absolute;
+	background-color: #FFAD86;
+	border: 1.5px solid #BB5100;
+}
+.main_content_down_right_container_block_top:hover{  
+	height: 34%;
+	width: 100%;
+	position: absolute;
+	background-color: #FF8F59;
+	border: 1.5px solid #BB5100;
+}
+
+	/*red block mid*/
+.main_content_down_right_container_block_mid{  
+	height: 33%;
+	width: 100%;
+	top: 34%;
+	position: absolute;
+	background-color: #FFAD86;
+	border: 1.5px solid #BB5100;
+}
+.main_content_down_right_container_block_mid:hover{  
+	height: 33%;
+	width: 100%;
+	top: 34%;
+	position: absolute;
+	background-color: #FF8F59;
+	border: 1.5px solid #BB5100;
+}
+
+	/*red block down*/
+.main_content_down_right_container_block_down{  
+	height: 33%;
+	width: 100%;
+	top: 67%;
+	position: absolute;
+	background-color: #FFAD86;
+	border: 1.5px solid #BB5100;
+}
+.main_content_down_right_container_block_down:hover{  
+	height: 33%;
+	width: 100%;
+	top: 67%;
+	position: absolute;
+	background-color: #FF8F59;
+	border: 1.5px solid #BB5100;
+}
+
+
+	/*setting*/
+.main_content_down_right_container_block_link_setting{
+	text-align:center; 
+	line-height:65px; 
+	font-family: Microsoft JhengHei;"
+	text-decoration:none;
+	color: #000;
+}
+
+
+/*各測驗項目大框架*/
+.big_test_container{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	/*border: 2px solid #FFB399;*/
+}
+/*各測驗項目小框架*/
+.small_test_container{
+    width: 54%;
+    height: 100%;
+    position: relative;
+    /*border: 1px solid #000000;*/
+    margin: 0 auto;
+}
+/*各測驗項目框架*/
+.test_container{
+	width:  33.3%;
+	height: 92%;
+	/*border: 2px solid #5BCE30;*/
+	position: absolute;
+	margin:2% 2% 0 0;
+}
+/*各測驗項目*/
+.every_test{
+	width: 90%;
+	height: 100%;
+	border: 1px solid #2A7BD4;
+	background-color:#A4CAE9;
+	border-radius: 25px;
+	position: absolute;
+	margin: 0 5%;
+}
+/*各測驗項目消息*/
+.every_news{
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;  
+	width: 90%;
+	height: 75%;
+	top: 45px;
+	background-color: #FFFFFF;
+	border: 1px solid #2A7BD4;
+	position: absolute;
+}
+/*more字型*/
+.word{
+	font-family: Microsoft JhengHei;
+	position: absolute;
+	top:91%;
+	left:43%;
+}
+/*箭頭*/
+.arrow{
+	font-size:20px;
+    left: 40%;
+
+}
+/*會變白色的字*/
+.a_text_white{
+	margin: 5px;
+	font-size: 18px;
+	font-family: Microsoft JhengHei;
+	text-decoration:none;
+	 color:black;
+
+}
+.a_text_white:hover{
+	margin: 5px;
+	font-size: 18px;
+	font-family: Microsoft JhengHei;
+	color: #FFFFFF;
+	text-decoration:none;	 
+}
+
+/*箭頭框架*/
+.arrow_container{
+	width: 400px;
+	min-height: 25px;
+	position: absolute;
+	/*border: 3px solid #D32BB2;*/
+
+}
+
+/*箭頭列表*/
+
+ ul.navigation, ul.navigation li, ul.navigation ul, a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ul.navigation,ul.navigation li {
+    list-style: none;
+}
+
+ul.navigation li {
+    position: relative;
+    float: left;
+}
+/* 選單 li 裡面連結之樣式 */
+ul.navigation li a{
+    font-family: Microsoft JhengHei;
+    display: block;
+    padding: 0 0px;
+    
+    color: #000;
+    
+}
+/* 特定在第一層，以左邊灰線分隔 */
+ul.navigation > li > a{
+    /*border-bottom: 1px solid #FFFFFF;    
+    border-right: 1px solid #99BBFF;*/
+}
+ul.navigation > li > a:hover{
+    color: #000;
+    
+    color: #DF1F8F;
+    text-decoration:none;
+}
+
+/* 特定在第一層 > 第二層之後下拉部分之樣式 */
+ul.navigation li ul{
+    display: none;
+    float: left;
+    position: absolute;
+    left: 0;    
+    margin: 0;
+    color: #6D6D6D;        
+    background: #EEE;
+}
+/* 當第一層選單被觸發時，指定第二層顯示 */
+ul.navigation li:hover > ul{
+    display: block;
+}
+/* 特定在第二層或之後下拉部分 li 之樣式 */
+ul.navigation ul li {
+    border-bottom: 1px solid #FFB132;
+}
+/* 特定在第二層或之後下拉部分 li （最後一項不要底線）之樣式 */
+ul.navigation ul li:last-child {
+    border-bottom: none;
+}
+
+/* 第二層或之後 選單 li 之樣式 */
+ul.navigation ul a {
+    width: 110px;
+    padding: 6px 6px;    
+    color: #000;        
+    background: #FFDB89;
+    font-size: 18px;
+    
+}
+ul.navigation ul a:hover {        
+    background: #FFB847;
+    text-decoration: none;    
+}
+/* 第三層之後，上一層的選單觸發則顯示出來（皆為橫向拓展） */
+ul.navigation ul li:hover > ul{
+    display: block;
+    position: absolute;
+    top: 0;    
+    left: 100%;
+    color: #000;        
+    background: #C0C0C0;
+
+}
+ul.navigation ul li ul li a{
+    width: 150px;
+    padding: 6px 6px;    
+    color: #000;        
+    background: #FFDB89;
+    text-align: center;
+    
+}
+ul.navigation ul li ul li ul li a{
+    width: 130px;
+    padding: 6px 6px;    
+    color: #000;        
+    background: #FFDB89;
+    text-align: center;
+    
+}
+
+/* 箭頭向下 */
+.arrow-bottom {
+    display: inline-block;
+    margin-left: 5px;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;    
+    border-left: 4px solid transparent;        
+    width: 1px;
+    height: 1px;
+}
+/* 箭頭向右 */
+.arrow-right {
+    display: inline-block;
+    margin-left: 20px;    
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid #666;        
+    width: 1px;
+    height: 1px;
+
+}
+
